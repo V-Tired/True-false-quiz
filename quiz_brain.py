@@ -16,7 +16,7 @@ class QuizBrain:
         self.score = 0
 
     def next_question(self) -> str:
-        """Cycles through the 10 questions, returns the count"""
+        """Cycles through the 10 questions, updates the count and returns a string"""
         if self.question_number < 10:
             self.current_question = self.question_list[self.question_number]
             self.question_number += 1
